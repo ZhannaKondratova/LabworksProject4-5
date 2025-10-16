@@ -112,6 +112,9 @@ int main() {
         d.output();
         std::cout << "------------------------------------------" << std::endl;
     }
-
+    filterAndOutputDiodes(allDiodes, 0.7, 0.0, "");
+    filterAndOutputDiodes(allDiodes, 0.0, 0.01, "diode");
+    filterAndOutputDiodes(allDiodes, 0.0, 100.0, "rectifier");
+    filterAndOutputDiodes(allDiodes, 5.0, 0.0, "");
     return 0;
 }
