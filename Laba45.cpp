@@ -86,9 +86,9 @@ void filterAndOutputDiodes(const std::vector<Diode>& diodes, double minVf, doubl
         }
     }
     if (!found) {
-        std::cout << "❌ No diode matching the specified criteria was found." << std::endl; 
+        std::cout << "No diode matching the specified criteria was found." << std::endl; 
     } else {
-        std::cout << "✅ Found " << count << " diodes matching the criteria." << std::endl; 
+        std::cout << "Found " << count << " diodes matching the criteria." << std::endl; 
     }
 }
 int main() {
@@ -118,3 +118,4 @@ int main() {
     filterAndOutputDiodes(allDiodes, 5.0, 0.0, "");
     return 0;
 }
+
